@@ -1,0 +1,14 @@
+.title {
+    color: $gray;
+    font-size: 80px;
+    line-height: 120px;
+    font-weight: 700;
+    text-transform: capitalize;
+    user-select: none;
+
+    &--header {
+        font-size: 100px;
+        line-height: 150px;
+
+    }
+}

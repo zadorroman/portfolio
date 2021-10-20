@@ -1,0 +1,73 @@
+.projects {
+    margin-top: 50px;
+
+    &__title {
+        margin-bottom: 50px;
+    }
+    &__box {
+        margin-bottom: 50px;
+    }
+    &__container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1370px;
+    }
+
+    &__pic {
+
+        overflow: hidden;
+        transition: .3s;
+
+
+        &:hover {
+
+            box-shadow: 25px 25px $pink;
+
+            .projects__img {
+                transform: scale(1.1) translateX(25px) translateY(25px);
+            }
+        }
+    };
+
+    &__img {
+        transition: all .3s;
+        @include size(400px, 320px);
+    };
+
+    &__item {
+        margin: 0 auto 120px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1150px;
+        width: 100%;
+    }
+
+    &__info {
+        margin: 80px auto 30px 80px;
+
+        &--margin {
+            margin-right: 30px;
+            margin-left: auto;
+        }
+    }
+
+    &__subtitle {
+        font-size: 60px;
+        line-height: 90px;
+        letter-spacing: -0.2px;
+        color: $gray;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 33px;
+        letter-spacing: 0.4px;
+        color: $bgray;
+        max-width: 410px;
+        width: 100%;
+    }
+}
